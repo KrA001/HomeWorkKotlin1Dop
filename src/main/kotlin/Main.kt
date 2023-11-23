@@ -1,3 +1,5 @@
+import cars.Car
+import cars.Cars
 import java.util.Scanner
 
 fun main(args: Array<String>) {
@@ -15,7 +17,7 @@ fun main(args: Array<String>) {
 
     println("Выберите из пречисленного ммодели машины c 1 до 4")
     for (i in list.indices) {
-        var number = i + 1
+        val number = i + 1
         println("$number) ${list[i].carMake}")
     }
     val scanner = Scanner(System.`in`)
